@@ -1,0 +1,5 @@
+name,age,university,degree
+kln,19,anna,BE
+ram,21,Bharat,Btech
+kln,19,anna,BE
+sara,22,amitry,bsc
