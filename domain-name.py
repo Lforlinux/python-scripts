@@ -1,7 +1,7 @@
 import requests
 import random
 import string
-
+# here the requirement is 5 letter domain ends with ta.com
 def generate_random_domain():
     letters = string.ascii_lowercase
     domain_name = ''.join(random.choice(letters) for i in range(3)) + "ta.com"
@@ -12,7 +12,6 @@ def check_domain_availability(domain_name):
     api_key = "" # replace with your API key
     endpoint = f"https://domain-availability.whoisxmlapi.com/api/v1?apiKey={api_key}&domainName={domain_name}&outputFormat=JSON"
     response = requests.get(endpoint)
-    #print(response)
 
     if response.status_code == 200:
         data = response.json()
